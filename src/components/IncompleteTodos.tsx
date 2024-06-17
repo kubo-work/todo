@@ -1,16 +1,16 @@
 type Props = {
-    todos:string[],
-    onClickComplete:(index:number) => void,
-    onClickDelete:(index:number) => void,
+    todos: string[],
+    onClickComplete: (index: number) => void,
+    onClickDelete: (index: number) => void,
   }
 
-export const IncompleteTodos = (props:Props) => {
-    const {todos,onClickComplete,onClickDelete} = props
+export const IncompleteTodos = (props: Props) => {
+    const {todos, onClickComplete, onClickDelete} = props
     return(
         <div className='incomplete-area'>
             <p className='title'>未完了のTODO</p>
             <ul>
-            {todos.map((todo,index) => (
+            {todos.map((todo, index) => (
                 <li key={todo}>
                     <div className='list-row'>
                         <p className='todo-item'>{todo}</p>

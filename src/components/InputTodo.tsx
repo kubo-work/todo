@@ -8,13 +8,13 @@ const style = {
 }
 
 type Props = {
-    todoText:string,
-    onChange:(event:React.ChangeEvent<HTMLInputElement>) => void,
-    onClick:() => void,
-    disabled:boolean
+    todoText: string,
+    onChange: (event: React.ChangeEvent<HTMLInputElement>) => void,
+    onClick: () => void,
+    disabled: boolean
 }
 
-export const InputTodos = (props:Props) => {
+export const InputTodos = (props: Props) => {
     const {todoText, onChange, onClick, disabled } = props
     return(
         <div style={style}>

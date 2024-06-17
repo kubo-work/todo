@@ -4,18 +4,18 @@ import { InputTodos } from "./components/InputTodo";
 import { IncompleteTodos } from "./components/IncompleteTodos";
 import { CompleteTodos } from "./components/CompleteTodos";
 
-export const Todo:React.FC = () => {
+export const Todo: React.FC = () => {
   const [todoText, setTodoText] = useState<string>("");
   const [incompleteTodos, setIncompleteTodos] = useState<string[]>([]);
   const [completeTodos, setCompleteTodos] = useState<string[]>([]);
 
-  const onChangeTodoText = (event:React.ChangeEvent<HTMLInputElement>) => {
+  const onChangeTodoText = (event: React.ChangeEvent<HTMLInputElement>) => {
     setTodoText(event.target.value);
   };
 
   const onClickAdd = () => {
     if (todoText === "") return;
-    const newTodos:string[] = [...incompleteTodos, todoText];
+    const newTodos: string[] = [...incompleteTodos, todoText];
     setIncompleteTodos(newTodos);
     setTodoText("");
   };

@@ -1,15 +1,15 @@
 type Props = {
-  todos:string[],
-  onClickBack:(index:number) => void,
+  todos: string[],
+  onClickBack: (index: number) => void,
 }
 
-export const CompleteTodos = (props:Props) => {
-    const { todos,onClickBack} = props
+export const CompleteTodos = (props: Props) => {
+    const { todos, onClickBack} = props
     return(
         <div className='complete-area'>
         <p className='title'>完了のTODO</p>
         <ul>
-        {todos.map((todo,index) => (
+        {todos.map((todo, index) => (
             <li key={todo}>
               <div className='list-row'>
                 <p className='todo-item'>{todo}</p>
