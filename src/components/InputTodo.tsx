@@ -15,7 +15,7 @@ type Props = {
 }
 
 export const InputTodos = (props:Props) => {
-    const {todoText,onChange,onClick,disabled } = props
+    const {todoText, onChange, onClick, disabled } = props
     return(
         <div style={style}>
             <input disabled={disabled} placeholder='TODOを入力' value={todoText} onChange={onChange}/>

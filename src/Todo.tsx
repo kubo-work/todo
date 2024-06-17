@@ -20,13 +20,13 @@ export const Todo:React.FC = () => {
     setTodoText("");
   };
 
-  const onClickDelete = (index:number) => {
+  const onClickDelete = (index: number) => {
     const newTodos = [...incompleteTodos];
     newTodos.splice(index, 1);
     setIncompleteTodos(newTodos);
   };
 
-  const onClickComplete = (index:number) => {
+  const onClickComplete = (index: number) => {
     const newInCompleteTodos = [...incompleteTodos];
     newInCompleteTodos.splice(index, 1);
 
@@ -36,7 +36,7 @@ export const Todo:React.FC = () => {
     setCompleteTodos(newCompleteTodos);
   };
 
-  const onClickBack = (index:number) => {
+  const onClickBack = (index: number) => {
     const newCompleteTodos = [...completeTodos];
     newCompleteTodos.splice(index, 1);
 
