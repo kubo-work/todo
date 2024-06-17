@@ -46,7 +46,7 @@ export const Todo: React.FC = () => {
     setIncompleteTodos(newInCompleteTodos);
   };
 
-  const isMaxLimitIncompleteTodos:number = 5;
+  const isMaxLimitIncompleteTodos: number = 5;
 
   return (
     <>
